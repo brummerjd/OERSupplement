@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Chapter 5 Review Problems</title>
+
+  <!--<introduction>
+    <p> Text before the first section. </p>
+  </introduction>-->
+
+  <!-- include sections -->
+  <!--<xi:include href="sec-section-name.ptx" />-->
+
+  <example>
+    <title>Integration Techniques</title>
+    
+    <statement>
+      <p>
+        We have learned about four primary techniques of integration this semester:
+        <ul>
+          <li>Integration by Substitution</li>
+          <li>Integration by Parts</li>
+          <li>Partial Fraction Decomposition</li>
+          <li>Trigonometric Substitution</li>
+        </ul>
+        Consider the following integral:
+        <me>\int \frac{x}{\sqrt{x^2+9}} \, dx</me>
+        In the space below, justify how you would use <em>two</em> of the techniques of integration listed above to solve the given integral. For each technique, you should say in a sentence why the technique is applicable to the given integral, then indicate the first step or substitution that you would use accordingly. You do not need to actually solve the integral using either technique.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <ul>
+          <li>
+            <p>
+              The denominator is of the form <m>\sqrt{x^2+a}</m>, where <m>a>0</m>, so we can do the <em>Trigonometric Substitution</em> <m>x=\sqrt{a}\tan(\theta)</m>. In this instance, <m>a=9</m>, so we substitute <m>x=3\tan(\theta)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The derivative of the argument of the square root is present in the numerator up to a constant multiple, so we can perform an <em>Integration by Substitution</em>. That is, if we differentiate <m>x^2+9</m> with respect to <m>x</m>, we get <m>2x</m>, which is in the numerator if we divide it by the constant <m>2</m>. This allows the <m>u</m>-substitution <m>u=x^2+9</m> to completely rewrite the integral in terms of <m>u</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </solution>
+
+  </example>
+
+  <example>
+    <title>Partial Fraction Decomposition</title>
+    
+    <statement>
+      <p>
+        Without solving for any coefficients, apply partial fraction decomposition to the following rational expression:
+        <me>\frac{1}{(x^2+7)(x^2+4x+3)}.</me>
+        Your answer should be a sum of fractions whose numerators include coefficients - coefficients you do not need to solve for.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        We first factor the denominator. Note that <m>x^2+7</m> is irreducible (it does not factor), while
+        <me>x^2+4x+3=(x+3)(x+1).</me>
+        So we have
+        <me>\frac{1}{(x^2+7)(x^2+4x+3)}=\frac{1}{(x^2+7)(x+3)(x+1)}.</me>
+        Now, again since <m>x^2+7</m> is an irreducible quadratic, the numerator of its term in the partial fraction decomposition should have degree one less than the degree of it. That is, the numerator should be degree <m>2-1=1</m>. A general degree 1 polynomial is of the form <m>Ax+B</m>, for some <m>A</m> and <m>B</m>. The two linear factors <m>(x+3)</m> and <m>(x+1)</m> are similar. They are degree 1 polynomials, so the numerator of the term in their partial fraction should have degree <m>1-1=0</m>. Degree 0 polynomials are constants, say <m>C</m> and <m>D</m>. This gives the decomposition
+        <me>\frac{1}{(x^2+7)(x+3)(x+1)} = \frac{Ax+B}{x^2+7} + \frac{C}{x+3} + \frac{D}{x+1}.</me>
+      </p>
+    </solution>
+
+  </example>
+
+  <example>
+    <title>Improper Integrals</title>
+    
+    <statement>
+      <p>
+        Determine the value of the following improper integral (or show that the integral diverges):
+        <me>\int_{10}^{\infty}\frac{1}{x^3}\,dx</me>
+        <em>Note:</em> Your work will be graded for mathematical accuracy, so be clear and careful about using limit notation as relevant.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <md>
+          <mrow>\lim_{b\to\infty} \int_{10}^{b}\frac{1}{x^3}\,dx \amp = \lim_{b\to\infty}\int_{10}^{b}x^{-3}\,dx</mrow>
+          <mrow> \amp = \lim_{b\to\infty}\left[\frac{x^{-2}}{-2}\right]_{10}^{b}</mrow>
+          <mrow> \amp = -\frac12\lim_{b\to\infty}\left(\frac{1}{b^2}-\frac{1}{10^2}\right)</mrow>
+          <mrow> \amp = -\frac12\left(0-\frac{1}{100}\right)</mrow>
+          <mrow> \amp = \frac{1}{200}.</mrow>
+        </md>
+      </p>
+    </solution>
+
+  </example>
+
+</chapter>
