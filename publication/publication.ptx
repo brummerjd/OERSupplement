@@ -57,6 +57,7 @@
   </source>
 
   <numbering>
+    <blocks level="0" />
     <!-- the divisions element describes the numbering of divisions.  -->
     <!-- @part-structure should be "decorative" or "structural",      -->
     <!-- were the latter would restart numbering chapters within each -->
@@ -112,7 +113,7 @@
       <!--<worksheet formatted="yes" />-->
   </latex>
 
-  <html>
+  <html embed-button="yes">
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
 
