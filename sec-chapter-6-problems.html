@@ -218,136 +218,64 @@ x = 0 \quad \amp \text{or} \quad x = 7
 <div class="autopermalink" data-description="Solution 6.1"><a href="#sec-chapter-6-problems-2-3" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Example 6: Volume of Revolution"><a href="#sec-chapter-6-problems-2" title="Copy heading and permalink for Example 6: Volume of Revolution" aria-label="Copy heading and permalink for Example 6: Volume of Revolution">🔗</a></div></article></details><details id="sec-chapter-6-problems-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work Pumping Water, Version A.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec-chapter-6-problems-3-2-1">
-<div class="para">The work required to pump water out of a tank is given by the following integral:</div>
-<div class="displaymath process-math" id="sec-chapter-6-problems-3-2-1-1">
-\begin{equation*}
-W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
-\end{equation*}
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area in Polar Coordinates.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec-chapter-6-problems-3-2-1">A student wishes to find the area in the first quadrant between the first and second "spirals" of the <em class="emphasis">Archimedean spiral</em>, a curve whose graph is given by the equation <span class="process-math">\(r=\theta\text{.}\)</span> The region of interest is shaded in the picture below.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/ArchimedeanSpiral.PNG" class="contained" alt="A coordinate plane showing an Archimedean spiral in blue (labeled r = theta), starting at the origin and winding outward counterclockwise. The spiral passes through multiple rotations around the origin. In the first quadrant, the region between two successive turns of the spiral is shaded with many thin radial line segments extending outward from the origin to the outer curve, forming a fan-like filled area between the inner and outer portions of the spiral."></div> <div class="para" id="sec-chapter-6-problems-3-2-3">The student determines that the answer is zero, as reasoned below, but they feel like they have made a mistake. Identify the student’s mistake and give an expression involving definite integrals (<em class="emphasis">which you do not need to evaluate</em>) that would correctly represent the area of the shaded region.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sec-chapter-6-problems-3-2-4">
+<div class="para"><em class="emphasis">Student Reasoning</em></div>
+<ol class="decimal" id="sec-chapter-6-problems-3-2-4-2">
+<li id="sec-chapter-6-problems-3-2-4-2-1">
+<div class="para" id="sec-chapter-6-problems-3-2-4-2-1-1">We will use the formula <span class="process-math">\(\displaystyle\int_a^b \left(\frac{(f(\theta)^2)}{2}-\frac{(g(\theta))^2}{2}\right)\;d\theta\text{,}\)</span> where <span class="process-math">\(r=f(\theta)\)</span> describes the "larger" curve (further from the origin) and <span class="process-math">\(r=g(\theta)\)</span> describes the curve closer to the origin. In both cases, <span class="process-math">\(f(\theta)=g(\theta)=\theta\text{,}\)</span> the Archimedean spiral.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">which is defined by the following <em class="emphasis">four important components</em>:</div>
-<ul class="disc" id="sec-chapter-6-problems-3-2-1-3">
-<li id="sec-chapter-6-problems-3-2-1-3-1">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-2-1-3-1">
-<span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constant values representing the appropriate bounds of integration,</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-2-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-chapter-6-problems-3-2-4-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="sec-chapter-6-problems-3-2-1-3-2">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-2-1-3-2">
-<span class="process-math">\(A(h)\)</span> is a function that gives the area of a slice,</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-2-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-2-1-3-3">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-2-1-3-3">
-<span class="process-math">\(D(h)\)</span> is a function that gives the distance a slice must be lifted, and</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-2-1-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-2-1-3-4">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-2-1-3-4">
-<span class="process-math">\(\delta(h)\)</span> is a function that gives the density of the fluid (in weight per unit volume) within a slice.</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-2-1-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="sec-chapter-6-problems-3-2-2">
-<ol class="decimal" id="sec-chapter-6-problems-3-2-2-1">
-<li id="sec-chapter-6-problems-3-2-2-1-1">
-<div class="para" id="sec-chapter-6-problems-3-2-2-1-1-1">Determine values or formulas for the <em class="emphasis">four important components</em> exactly for the following specific problem:<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-chapter-6-problems-3-2-4-2-2">
+<div class="para" id="sec-chapter-6-problems-3-2-4-2-2-1">The bounds of integration are the angles that encompass the first quadrant, corresopnding to <span class="process-math">\(a=0\)</span> radians and <span class="process-math">\(b=\frac{\pi}{2}\)</span> radians.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-chapter-6-problems-3-2-2-1-1-2">
-<em class="emphasis">Problem:</em> A rectangular tank is oriented upright. The height of the tank is <span class="process-math">\(13\)</span> ft, and the length and width of the tank are <span class="process-math">\(2\)</span> ft by <span class="process-math">\(9\)</span> ft. The tank is full of water (which has a constant weight density of <span class="process-math">\(62.4\)</span> pounds per cubic foot), and the water is to be pumped out of the top of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-chapter-6-problems-3-2-2-1-1-3">To receive full credit, you must draw a picture with a typical slice and clearly label what distance is represented by <span class="process-math">\(h\text{,}\)</span> since there are multiple valid ways of setting up the problem. <em class="emphasis">You only need to define the components; you do not need to evaluate the integral itself.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 1"><a href="#sec-chapter-6-problems-3-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-chapter-6-problems-3-2-4-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="sec-chapter-6-problems-3-2-2-1-2">
-<div class="para logical" id="sec-chapter-6-problems-3-2-2-1-2-1">
-<div class="para">The sub-parts below are unrelated. For each scenario described below, justify in complete sentences which of the <em class="emphasis">four important components</em> would be affected in the new context. Describe all components affected; there may be more than one.</div>
-<ul class="disc" id="sec-chapter-6-problems-3-2-2-1-2-1-2">
-<li id="sec-chapter-6-problems-3-2-2-1-2-1-2-1">
-<div class="para" id="sec-chapter-6-problems-3-2-2-1-2-1-2-1-1">One of the length/width dimensions of the tank is made smaller.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-chapter-6-problems-3-2-4-2-3">
+<div class="para logical" id="sec-chapter-6-problems-3-2-4-2-3-1">
+<div class="para">Plugging this all in, we have</div>
+<div class="displaymath process-math" id="sec-chapter-6-problems-3-2-4-2-3-1-1">
+\begin{align*}
+\int_a^b \left( \frac{(f(\theta)^2)}{2} - \frac{(g(\theta))^2}{2} \right) \; d\theta \amp = \int_0^{\pi/2} \left( \frac{\theta^2}{2} - \frac{\theta^2}{2} \right) \; d\theta\\
+\amp = \int_0^{\pi/2} 0 \; d\theta\\
+\amp = 0
+\end{align*}
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-2-2-1-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-2-2-1-2-1-2-2">
-<div class="para" id="sec-chapter-6-problems-3-2-2-1-2-1-2-2-1">Only the top few feet of water are to be pumped out of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-2-2-1-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 2"><a href="#sec-chapter-6-problems-3-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-chapter-6-problems-3-2-4-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="sec-chapter-6-problems-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="sec-chapter-6-problems-3-3-1">
-<ol class="decimal" id="sec-chapter-6-problems-3-3-1-1">
-<li id="sec-chapter-6-problems-3-3-1-1-1">
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/RectangularTank1a.PNG" class="contained" alt='An illustration of a rectangular tank drawn in three dimensions. The tank is labeled 13 feet tall, 9 feet long (front edge), and 2 feet deep (side edge). A horizontal blue slice of water is shown partway up the tank, with the surface shaded light blue. An arrow labeled "slice" points to the thin horizontal layer of water, indicating a cross-sectional slice used for volume calculations. On the right side, a vertical red bracket labeled "h" indicates the depth of the water from the top of the tank to the slice.'></div>
-<div class="para logical" id="sec-chapter-6-problems-3-3-1-1-1-2">
-<div class="para">Let <span class="process-math">\(h\)</span> be the distance down from the top of the tank.</div>
-<ul class="disc" id="sec-chapter-6-problems-3-3-1-1-1-2-2">
-<li id="sec-chapter-6-problems-3-3-1-1-1-2-2-1">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-3-1-1-1-2-2-1">
-<span class="process-math">\(a=0\text{,}\)</span> <span class="process-math">\(b=13\)</span>
+<div class="para" id="sec-chapter-6-problems-3-3-1">The mistake is subtle, but the student cannot use the same formula for both <span class="process-math">\(f(\theta)\)</span> and <span class="process-math">\(g(\theta)\)</span> because they do not correspond to the same range of <span class="process-math">\(\theta\)</span> values. The portion of the curve further from the origin, <span class="process-math">\(f(\theta)\text{,}\)</span> has made a full <span class="process-math">\(2\pi\)</span> rotation already and therefore corresponds to <span class="process-math">\(\theta\)</span> values ranging from <span class="process-math">\(2\pi\)</span> to <span class="process-math">\(\frac{5\pi}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-3-1-1-1-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-3-1-1-1-2-2-2">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-3-1-1-1-2-2-2"><span class="process-math">\(\displaystyle A(h)=2\cdot9=18\)</span></div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-3-1-1-1-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-3-1-1-1-2-2-3">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-3-1-1-1-2-2-3"><span class="process-math">\(\displaystyle D(h)=h\)</span></div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-3-1-1-1-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-3-1-1-1-2-2-4">
-<div class="para" id="p-derived-sec-chapter-6-problems-3-3-1-1-1-2-2-4"><span class="process-math">\(\displaystyle \delta(h)=62.4\)</span></div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-3-1-1-1-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="para">The total work required is:</div>
-<div class="displaymath process-math" id="sec-chapter-6-problems-3-3-1-1-1-2-3">
+<div class="para logical" id="sec-chapter-6-problems-3-3-2">
+<div class="para">One option to fix this would be to correctly represent the area between the curves as the area "under" the larger curve minus the area "under" the smaller curve:</div>
+<div class="displaymath process-math" id="sec-chapter-6-problems-3-3-2-1">
 \begin{equation*}
-\int_0^{13} 18 (62.4) h \; dh
+\int_{2\pi}^{5\pi/2} \frac{\theta^2}{2} \; d\theta - \int_0^{\pi/2} \frac{\theta^2}{2} \; d\theta
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#sec-chapter-6-problems-3-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-3-1-1-2">
-<div class="para logical" id="sec-chapter-6-problems-3-3-1-1-2-1">
-<ul class="disc" id="sec-chapter-6-problems-3-3-1-1-2-1-1">
-<li id="sec-chapter-6-problems-3-3-1-1-2-1-1-1">
-<div class="para" id="sec-chapter-6-problems-3-3-1-1-2-1-1-1-1">
-<span class="process-math">\(A(h)\)</span> would change because the area <span class="process-math">\(A(h)=\text{length}\times\text{width}\text{,}\)</span> so shrinking the length/width will shrink the area.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sec-chapter-6-problems-3-3-3">
+<div class="para">An alternative solution would be to note that the "larger" curve, <span class="process-math">\(f(\theta)\text{,}\)</span> corresponds to <span class="process-math">\(\theta\)</span> values that are <span class="process-math">\(2\pi\)</span> larger than the <span class="process-math">\(\theta\)</span> values on the "smaller" curve <span class="process-math">\(g(\theta)\text{,}\)</span> so the answer could be given by the following single definite integral:</div>
+<div class="displaymath process-math" id="sec-chapter-6-problems-3-3-3-6">
+\begin{equation*}
+\int_0^{\pi/2} \left( \frac{(\theta+2\pi)^2}{2} - \frac{\theta^2}{2} \right) \; d\theta
+\end{equation*}
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-3-1-1-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-3-3-1-1-2-1-1-2">
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/RectangularTank1b.PNG" class="contained" alt='An illustration of a rectangular tank drawn in three dimensions. The tank is labeled 13 feet tall. A horizontal blue slice of water is shown partway up the tank, with the surface shaded light blue. An arrow labeled "slice" points to the thin horizontal layer of water, indicating a cross-sectional slice used for volume calculations. On the right side, a vertical red bracket labeled "h" indicates the depth of the water from the top of the tank to the slice. The top of the tank has a depth label of "a=0" and the bottom of the tank has a depth label of "b=13".'></div>
-<div class="para" id="sec-chapter-6-problems-3-3-1-1-2-1-1-2-2">In the setup above, <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> correspond to the values of <span class="process-math">\(h\)</span> at the top and the bottom of the tank. Limiting to pumping the top few feet would change the value of <span class="process-math">\(b\)</span> (making it smaller).<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-1-1-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-3-3-1-1-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 2"><a href="#sec-chapter-6-problems-3-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
-</li>
-</ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 7.1"><a href="#sec-chapter-6-problems-3-3" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 7: Work Pumping Water, Version A"><a href="#sec-chapter-6-problems-3" title="Copy heading and permalink for Example 7: Work Pumping Water, Version A" aria-label="Copy heading and permalink for Example 7: Work Pumping Water, Version A">🔗</a></div></article></details><details id="sec-chapter-6-problems-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work Pumping Water, Version B.</span>
+<div class="autopermalink" data-description="Example 7: Area in Polar Coordinates"><a href="#sec-chapter-6-problems-3" title="Copy heading and permalink for Example 7: Area in Polar Coordinates" aria-label="Copy heading and permalink for Example 7: Area in Polar Coordinates">🔗</a></div></article></details><details id="sec-chapter-6-problems-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work Pumping Water, Version A.</span>
 </h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec-chapter-6-problems-4-2-1">
 <div class="para">The work required to pump water out of a tank is given by the following integral:</div>
 <div class="displaymath process-math" id="sec-chapter-6-problems-4-2-1-1">
@@ -385,7 +313,7 @@ W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
 <div class="para" id="sec-chapter-6-problems-4-2-2-1-1-1">Determine values or formulas for the <em class="emphasis">four important components</em> exactly for the following specific problem:<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-chapter-6-problems-4-2-2-1-1-2">
-<em class="emphasis">Problem:</em> A cylindrical tank is oriented upright (so that its circular base is on the ground). The height of the tank is <span class="process-math">\(12\)</span> ft and the radius is <span class="process-math">\(4\)</span> ft. The tank is full of water (which has a constant weight density of <span class="process-math">\(62.4\)</span> pounds per cubic foot), and the water is to be pumped out of the top of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Problem:</em> A rectangular tank is oriented upright. The height of the tank is <span class="process-math">\(13\)</span> ft, and the length and width of the tank are <span class="process-math">\(2\)</span> ft by <span class="process-math">\(9\)</span> ft. The tank is full of water (which has a constant weight density of <span class="process-math">\(62.4\)</span> pounds per cubic foot), and the water is to be pumped out of the top of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-chapter-6-problems-4-2-2-1-1-3">To receive full credit, you must draw a picture with a typical slice and clearly label what distance is represented by <span class="process-math">\(h\text{,}\)</span> since there are multiple valid ways of setting up the problem. <em class="emphasis">You only need to define the components; you do not need to evaluate the integral itself.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -396,12 +324,12 @@ W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
 <div class="para">The sub-parts below are unrelated. For each scenario described below, justify in complete sentences which of the <em class="emphasis">four important components</em> would be affected in the new context. Describe all components affected; there may be more than one.</div>
 <ul class="disc" id="sec-chapter-6-problems-4-2-2-1-2-1-2">
 <li id="sec-chapter-6-problems-4-2-2-1-2-1-2-1">
-<div class="para" id="sec-chapter-6-problems-4-2-2-1-2-1-2-1-1">The radius of the tank is made smaller.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-chapter-6-problems-4-2-2-1-2-1-2-1-1">One of the length/width dimensions of the tank is made smaller.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-2-2-1-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-chapter-6-problems-4-2-2-1-2-1-2-2">
-<div class="para" id="sec-chapter-6-problems-4-2-2-1-2-1-2-2-1">The tank is instead filled with two or more fluids which have separated so the denser fluids are closer to the bottom of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-chapter-6-problems-4-2-2-1-2-1-2-2-1">Only the top few feet of water are to be pumped out of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-2-2-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-2-2-1-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -417,68 +345,36 @@ W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
 <div class="para logical" id="sec-chapter-6-problems-4-3-1">
 <ol class="decimal" id="sec-chapter-6-problems-4-3-1-1">
 <li id="sec-chapter-6-problems-4-3-1-1-1">
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/CylindricalTank1.PNG" class="contained" alt="A vertical cylindrical tank drawn in three dimensions. The bottom circular base has a line drawn to represent the radius, labeled r = 4 ft. A horizontal red circle inside the cylinder marks a cross-sectional slice at height h above the bottom. A blue arrow on the left measures h upward from the base, labeled from h = 0 ft at the bottom (corresponding to a = 0) to h = 12 ft at the top (corresponding to b = 12). A red arrow on the right labeled D(h) indicates the depth from the slice up to the top of the tank."></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/RectangularTank1a.PNG" class="contained" alt='An illustration of a rectangular tank drawn in three dimensions. The tank is labeled 13 feet tall, 9 feet long (front edge), and 2 feet deep (side edge). A horizontal blue slice of water is shown partway up the tank, with the surface shaded light blue. An arrow labeled "slice" points to the thin horizontal layer of water, indicating a cross-sectional slice used for volume calculations. On the right side, a vertical red bracket labeled "h" indicates the depth of the water from the top of the tank to the slice.'></div>
 <div class="para logical" id="sec-chapter-6-problems-4-3-1-1-1-2">
-<div class="para">Let <span class="process-math">\(h\)</span> be the distance up from the bottom of the tank, as in the picture above.</div>
+<div class="para">Let <span class="process-math">\(h\)</span> be the distance down from the top of the tank.</div>
 <ul class="disc" id="sec-chapter-6-problems-4-3-1-1-1-2-2">
 <li id="sec-chapter-6-problems-4-3-1-1-1-2-2-1">
 <div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-1">
-<span class="process-math">\(a=0\text{,}\)</span> <span class="process-math">\(b=12\)</span>
+<span class="process-math">\(a=0\text{,}\)</span> <span class="process-math">\(b=13\)</span>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-chapter-6-problems-4-3-1-1-1-2-2-2">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-2"><span class="process-math">\(\displaystyle A(h)=\pi r^2=\pi\cdot4^2=16\pi \quad \text{(square feet)}\)</span></div>
+<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-2"><span class="process-math">\(\displaystyle A(h)=2\cdot9=18\)</span></div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-chapter-6-problems-4-3-1-1-1-2-2-3">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-3"><span class="process-math">\(\displaystyle D(h)=12-h \quad \text{(ft)}\)</span></div>
+<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-3"><span class="process-math">\(\displaystyle D(h)=h\)</span></div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-chapter-6-problems-4-3-1-1-1-2-2-4">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-4"><span class="process-math">\(\displaystyle \delta(h)=62.4 \quad \text{(pounds per cubic foot)}\)</span></div>
+<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-2-2-4"><span class="process-math">\(\displaystyle \delta(h)=62.4\)</span></div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">The total work required is:</div>
 <div class="displaymath process-math" id="sec-chapter-6-problems-4-3-1-1-1-2-3">
 \begin{equation*}
-\int_0^{12} (16\pi) (12-h) (62.4) \; dh
+\int_0^{13} 18 (62.4) h \; dh
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-chapter-6-problems-4-3-1-1-1-3">An alternative solution may be given where <span class="process-math">\(h\)</span> is now the distance down from the top of the tank, as in the picture below.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/CylindricalTank2.PNG" class="contained" alt="A vertical cylindrical tank drawn in three dimensions. The bottom circular base has a line drawn to represent the radius, labeled r = 4 ft. A horizontal red circle inside the cylinder marks a cross-sectional slice at a distance h below the top. A blue arrow on the left measures h downward from the top, labeled from h = 0 ft at the top (corresponding to a = 0) to h = 12 ft at the bottom (corresponding to b = 12). A red arrow on the right labeled D(h) indicates the depth from the slice up to the top of the tank."></div>
-<div class="para logical" id="sec-chapter-6-problems-4-3-1-1-1-5">
-<ul class="disc" id="sec-chapter-6-problems-4-3-1-1-1-5-1">
-<li id="sec-chapter-6-problems-4-3-1-1-1-5-1-1">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-5-1-1">
-<span class="process-math">\(a=0\text{,}\)</span> <span class="process-math">\(b=12\)</span>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-4-3-1-1-1-5-1-2">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-5-1-2"><span class="process-math">\(\displaystyle A(h)=\pi r^2=\pi\cdot4^2=16\pi \quad \text{(square feet)}\)</span></div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-4-3-1-1-1-5-1-3">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-5-1-3"><span class="process-math">\(\displaystyle D(h)=h \quad \text{(ft)}\)</span></div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sec-chapter-6-problems-4-3-1-1-1-5-1-4">
-<div class="para" id="p-derived-sec-chapter-6-problems-4-3-1-1-1-5-1-4"><span class="process-math">\(\displaystyle \delta(h)=62.4 \quad \text{(pounds per cubic foot)}\)</span></div>
-<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-1-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="para">In this case, the total work required would be given by:</div>
-<div class="displaymath process-math" id="sec-chapter-6-problems-4-3-1-1-1-5-2">
-\begin{equation*}
-\int_0^{12} (16\pi) (h) (62.4) \; dh
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 1"><a href="#sec-chapter-6-problems-4-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
@@ -486,12 +382,14 @@ W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
 <div class="para logical" id="sec-chapter-6-problems-4-3-1-1-2-1">
 <ul class="disc" id="sec-chapter-6-problems-4-3-1-1-2-1-1">
 <li id="sec-chapter-6-problems-4-3-1-1-2-1-1-1">
-<div class="para" id="sec-chapter-6-problems-4-3-1-1-2-1-1-1-1">The radius of the tank shrinking means <em class="emphasis"><span class="process-math">\(A(h)\)</span> decreases</em>, since <span class="process-math">\(A(h)=\pi r^2\text{.}\)</span> If the radius shrinks, so does <span class="process-math">\(A(h)\text{.}\)</span> None of the other components are affected: <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(D(h)\)</span> do not change since the water is still to be moved the same height, and <span class="process-math">\(\delta(h)\)</span> is unchanged since the liquid is unchanged.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-chapter-6-problems-4-3-1-1-2-1-1-1-1">
+<span class="process-math">\(A(h)\)</span> would change because the area <span class="process-math">\(A(h)=\text{length}\times\text{width}\text{,}\)</span> so shrinking the length/width will shrink the area.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-chapter-6-problems-4-3-1-1-2-1-1-2">
-<div class="para" id="sec-chapter-6-problems-4-3-1-1-2-1-1-2-1">The fluids separating means only <span class="process-math">\(\delta(h)\)</span> is affected, although <em class="emphasis">we do not have enough information to say how</em>. This is because the fluid density varies, and the density may now depend on where the slice is taken. Since the tank itself does not change, none of the other components are affected.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/RectangularTank1b.PNG" class="contained" alt='An illustration of a rectangular tank drawn in three dimensions. The tank is labeled 13 feet tall. A horizontal blue slice of water is shown partway up the tank, with the surface shaded light blue. An arrow labeled "slice" points to the thin horizontal layer of water, indicating a cross-sectional slice used for volume calculations. On the right side, a vertical red bracket labeled "h" indicates the depth of the water from the top of the tank to the slice. The top of the tank has a depth label of "a=0" and the bottom of the tank has a depth label of "b=13".'></div>
+<div class="para" id="sec-chapter-6-problems-4-3-1-1-2-1-1-2-2">In the setup above, <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> correspond to the values of <span class="process-math">\(h\)</span> at the top and the bottom of the tank. Limiting to pumping the top few feet would change the value of <span class="process-math">\(b\)</span> (making it smaller).<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-4-3-1-1-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-4-3-1-1-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -505,7 +403,166 @@ W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
 </div>
 <div class="autopermalink" data-description="Solution 8.1"><a href="#sec-chapter-6-problems-4-3" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 8: Work Pumping Water, Version B"><a href="#sec-chapter-6-problems-4" title="Copy heading and permalink for Example 8: Work Pumping Water, Version B" aria-label="Copy heading and permalink for Example 8: Work Pumping Water, Version B">🔗</a></div></article></details><div class="autopermalink" data-description="Section 1.2: Chapter 6 Review Problems"><a href="#sec-chapter-6-problems" title="Copy heading and permalink for Section 1.2: Chapter 6 Review Problems" aria-label="Copy heading and permalink for Section 1.2: Chapter 6 Review Problems">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 8: Work Pumping Water, Version A"><a href="#sec-chapter-6-problems-4" title="Copy heading and permalink for Example 8: Work Pumping Water, Version A" aria-label="Copy heading and permalink for Example 8: Work Pumping Water, Version A">🔗</a></div></article></details><details id="sec-chapter-6-problems-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work Pumping Water, Version B.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec-chapter-6-problems-5-2-1">
+<div class="para">The work required to pump water out of a tank is given by the following integral:</div>
+<div class="displaymath process-math" id="sec-chapter-6-problems-5-2-1-1">
+\begin{equation*}
+W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh
+\end{equation*}
+</div>
+<div class="para">which is defined by the following <em class="emphasis">four important components</em>:</div>
+<ul class="disc" id="sec-chapter-6-problems-5-2-1-3">
+<li id="sec-chapter-6-problems-5-2-1-3-1">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-2-1-3-1">
+<span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constant values representing the appropriate bounds of integration,</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-2-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-2-1-3-2">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-2-1-3-2">
+<span class="process-math">\(A(h)\)</span> is a function that gives the area of a slice,</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-2-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-2-1-3-3">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-2-1-3-3">
+<span class="process-math">\(D(h)\)</span> is a function that gives the distance a slice must be lifted, and</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-2-1-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-2-1-3-4">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-2-1-3-4">
+<span class="process-math">\(\delta(h)\)</span> is a function that gives the density of the fluid (in weight per unit volume) within a slice.</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-2-1-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sec-chapter-6-problems-5-2-2">
+<ol class="decimal" id="sec-chapter-6-problems-5-2-2-1">
+<li id="sec-chapter-6-problems-5-2-2-1-1">
+<div class="para" id="sec-chapter-6-problems-5-2-2-1-1-1">Determine values or formulas for the <em class="emphasis">four important components</em> exactly for the following specific problem:<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-chapter-6-problems-5-2-2-1-1-2">
+<em class="emphasis">Problem:</em> A cylindrical tank is oriented upright (so that its circular base is on the ground). The height of the tank is <span class="process-math">\(12\)</span> ft and the radius is <span class="process-math">\(4\)</span> ft. The tank is full of water (which has a constant weight density of <span class="process-math">\(62.4\)</span> pounds per cubic foot), and the water is to be pumped out of the top of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-chapter-6-problems-5-2-2-1-1-3">To receive full credit, you must draw a picture with a typical slice and clearly label what distance is represented by <span class="process-math">\(h\text{,}\)</span> since there are multiple valid ways of setting up the problem. <em class="emphasis">You only need to define the components; you do not need to evaluate the integral itself.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-chapter-6-problems-5-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-2-2-1-2">
+<div class="para logical" id="sec-chapter-6-problems-5-2-2-1-2-1">
+<div class="para">The sub-parts below are unrelated. For each scenario described below, justify in complete sentences which of the <em class="emphasis">four important components</em> would be affected in the new context. Describe all components affected; there may be more than one.</div>
+<ul class="disc" id="sec-chapter-6-problems-5-2-2-1-2-1-2">
+<li id="sec-chapter-6-problems-5-2-2-1-2-1-2-1">
+<div class="para" id="sec-chapter-6-problems-5-2-2-1-2-1-2-1-1">The radius of the tank is made smaller.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-2-2-1-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-2-2-1-2-1-2-2">
+<div class="para" id="sec-chapter-6-problems-5-2-2-1-2-1-2-2-1">The tank is instead filled with two or more fluids which have separated so the denser fluids are closer to the bottom of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-2-2-1-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-chapter-6-problems-5-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-chapter-6-problems-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-chapter-6-problems-5-3-1">
+<ol class="decimal" id="sec-chapter-6-problems-5-3-1-1">
+<li id="sec-chapter-6-problems-5-3-1-1-1">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/CylindricalTank1.PNG" class="contained" alt="A vertical cylindrical tank drawn in three dimensions. The bottom circular base has a line drawn to represent the radius, labeled r = 4 ft. A horizontal red circle inside the cylinder marks a cross-sectional slice at height h above the bottom. A blue arrow on the left measures h upward from the base, labeled from h = 0 ft at the bottom (corresponding to a = 0) to h = 12 ft at the top (corresponding to b = 12). A red arrow on the right labeled D(h) indicates the depth from the slice up to the top of the tank."></div>
+<div class="para logical" id="sec-chapter-6-problems-5-3-1-1-1-2">
+<div class="para">Let <span class="process-math">\(h\)</span> be the distance up from the bottom of the tank, as in the picture above.</div>
+<ul class="disc" id="sec-chapter-6-problems-5-3-1-1-1-2-2">
+<li id="sec-chapter-6-problems-5-3-1-1-1-2-2-1">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-2-2-1">
+<span class="process-math">\(a=0\text{,}\)</span> <span class="process-math">\(b=12\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-1-2-2-2">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-2-2-2"><span class="process-math">\(\displaystyle A(h)=\pi r^2=\pi\cdot4^2=16\pi \quad \text{(square feet)}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-1-2-2-3">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-2-2-3"><span class="process-math">\(\displaystyle D(h)=12-h \quad \text{(ft)}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-1-2-2-4">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-2-2-4"><span class="process-math">\(\displaystyle \delta(h)=62.4 \quad \text{(pounds per cubic foot)}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">The total work required is:</div>
+<div class="displaymath process-math" id="sec-chapter-6-problems-5-3-1-1-1-2-3">
+\begin{equation*}
+\int_0^{12} (16\pi) (12-h) (62.4) \; dh
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-chapter-6-problems-5-3-1-1-1-3">An alternative solution may be given where <span class="process-math">\(h\)</span> is now the distance down from the top of the tank, as in the picture below.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/CylindricalTank2.PNG" class="contained" alt="A vertical cylindrical tank drawn in three dimensions. The bottom circular base has a line drawn to represent the radius, labeled r = 4 ft. A horizontal red circle inside the cylinder marks a cross-sectional slice at a distance h below the top. A blue arrow on the left measures h downward from the top, labeled from h = 0 ft at the top (corresponding to a = 0) to h = 12 ft at the bottom (corresponding to b = 12). A red arrow on the right labeled D(h) indicates the depth from the slice up to the top of the tank."></div>
+<div class="para logical" id="sec-chapter-6-problems-5-3-1-1-1-5">
+<ul class="disc" id="sec-chapter-6-problems-5-3-1-1-1-5-1">
+<li id="sec-chapter-6-problems-5-3-1-1-1-5-1-1">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-5-1-1">
+<span class="process-math">\(a=0\text{,}\)</span> <span class="process-math">\(b=12\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-1-5-1-2">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-5-1-2"><span class="process-math">\(\displaystyle A(h)=\pi r^2=\pi\cdot4^2=16\pi \quad \text{(square feet)}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-1-5-1-3">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-5-1-3"><span class="process-math">\(\displaystyle D(h)=h \quad \text{(ft)}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-1-5-1-4">
+<div class="para" id="p-derived-sec-chapter-6-problems-5-3-1-1-1-5-1-4"><span class="process-math">\(\displaystyle \delta(h)=62.4 \quad \text{(pounds per cubic foot)}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-1-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">In this case, the total work required would be given by:</div>
+<div class="displaymath process-math" id="sec-chapter-6-problems-5-3-1-1-1-5-2">
+\begin{equation*}
+\int_0^{12} (16\pi) (h) (62.4) \; dh
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-chapter-6-problems-5-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-2">
+<div class="para logical" id="sec-chapter-6-problems-5-3-1-1-2-1">
+<ul class="disc" id="sec-chapter-6-problems-5-3-1-1-2-1-1">
+<li id="sec-chapter-6-problems-5-3-1-1-2-1-1-1">
+<div class="para" id="sec-chapter-6-problems-5-3-1-1-2-1-1-1-1">The radius of the tank shrinking means <em class="emphasis"><span class="process-math">\(A(h)\)</span> decreases</em>, since <span class="process-math">\(A(h)=\pi r^2\text{.}\)</span> If the radius shrinks, so does <span class="process-math">\(A(h)\text{.}\)</span> None of the other components are affected: <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(D(h)\)</span> do not change since the water is still to be moved the same height, and <span class="process-math">\(\delta(h)\)</span> is unchanged since the liquid is unchanged.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-chapter-6-problems-5-3-1-1-2-1-1-2">
+<div class="para" id="sec-chapter-6-problems-5-3-1-1-2-1-1-2-1">The fluids separating means only <span class="process-math">\(\delta(h)\)</span> is affected, although <em class="emphasis">we do not have enough information to say how</em>. This is because the fluid density varies, and the density may now depend on where the slice is taken. Since the tank itself does not change, none of the other components are affected.<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-chapter-6-problems-5-3-1-1-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-chapter-6-problems-5-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-chapter-6-problems-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1"><a href="#sec-chapter-6-problems-5-3" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9: Work Pumping Water, Version B"><a href="#sec-chapter-6-problems-5" title="Copy heading and permalink for Example 9: Work Pumping Water, Version B" aria-label="Copy heading and permalink for Example 9: Work Pumping Water, Version B">🔗</a></div></article></details><div class="autopermalink" data-description="Section 1.2: Chapter 6 Review Problems"><a href="#sec-chapter-6-problems" title="Copy heading and permalink for Section 1.2: Chapter 6 Review Problems" aria-label="Copy heading and permalink for Section 1.2: Chapter 6 Review Problems">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-chapter-5-problems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
