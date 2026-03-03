@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chapter-6-problems">
+  <title>Chapter 6 Review Problems</title>
+  
+  <example>
+    <title>Volume of Revolution</title>
+    
+    <statement>
+      <p>
+        Consider the region above <m>y=x^2</m> and below <m>y=7x</m>, graphed below. The axes are intentionally left blank, so you may need to use algebra to determine information about where the graphs intersect.
+        <ol>
+          <li>
+            <image source="CurvesForRotation.PNG" width="50%">
+              <shortdescription>A coordinate plane displaying the line y = 7x and the parabola y = x squared. Both curves pass through the origin. The line increases at a constant rate, while the parabola curves upward more slowly at first and then becomes steeper, eventually intersecting the line again to the right.</shortdescription>
+            </image>
+            <p>
+              Assuming you will be finding a volume of revolution for this region rotated around the <m>x</m>-axis, <em effect="bold">draw a typical slice on the picture above</em>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Set up, but do not evaluate, the definite integral that gives the volume of this region when it is rotated around the <m>x</m>-axis.
+            </p>
+          </li>
+          <li>
+            <p>
+              Describe in a few sentences how the definite integral that you gave in part 2 represents the volume of revolution. You do not need to describe anything about the bounds of integration. You may receive some credit for indicating how you plugged expressions into a formula you had memorized, but in order to receive full credit, you must justify your answer using geometry. You may draw additional pictures as part of your description.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <image source="CurvesForRotation.PNG" width="50%">
+              <shortdescription>A coordinate plane displaying the line y = 7x and the parabola y = x squared. Both curves pass through the origin. The line increases at a constant rate, while the parabola curves upward more slowly at first and then becomes steeper, eventually intersecting the line again to the right. A narrow vertical red rectangle between the two curves is highlighted (with the top of the rectangle touching the y = 7x curve and the bottom of the rectangle touching the y = x squared curve) and is labeled "a slice," indicating a representative vertical slice between the graphs.</shortdescription>
+            </image>
+          </li>
+          <li>
+            <p>
+              First, find the intersctions:
+                <md>
+                  <mrow> x^2 \amp = 7x</mrow>
+                  <mrow> x^2 - 7x \amp = 0</mrow>
+                  <mrow> x (x-7) \amp = 0</mrow>
+                  <mrow> x = 0 \quad \amp \text{or} \quad x = 7</mrow>
+                </md>
+              Use these points of intersection to set up the definite integral. All of the following forms are equivalent and would be correct solutions:
+                <md>
+                  <mrow> \amp \int_0^7 ( \pi(7x)^2 - \pi(x^2)^2 ) \; dx</mrow>
+                  <mrow> \amp \int_0^7 \pi ( (7x)^2 - (x^2)^2 ) \; dx</mrow>
+                  <mrow> \amp \int_0^7 \pi ( 49x^2 - x^4 ) \; dx</mrow>
+                </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Upon rotating a slice (from part 1) around the <m>x</m>-axis, the trace is a washer-like shape. The area of the full washer (without the hole) is <m>\pi(\text{radius})^2</m>. In this case, <m>\text{radius}=7x</m>, so <m>\pi(7x)^2</m>. Similarly, the area of the hole is <m>\pi(x^2)^2</m>. Subtracting the area of the hole from the area of the full washer gives the area of the washer slice -- the correct integrand.
+            </p>
+            <image source="WasherRotated.PNG" width="50%">
+              <shortdescription>A three-dimensional drawing of a washer-shaped solid formed by rotating a vertical slice around the x-axis. The washer has a circular outer edge and a smaller circular hole in the center. A horizontal blue line through the center represents the x-axis of rotation. A narrow red rectangular strip on the front face of the washer is labeled "slice from (a),"" indicating the original vertical slice that was revolved to create the washer.</shortdescription>
+            </image>
+          </li>
+        </ol>
+      </p>
+    </solution>
+
+  </example>
+
+  <example>
+    <title>Work Pumping Water</title>
+    
+    <statement>
+      <p>
+        The work required to pump water out of a tank is given by the following integral:
+          <me>W = \int_a^b A(h)\, D(h)\, \delta(h)\, dh</me>
+        which is defined by the following <em effect="bold">four important components</em>:
+        <ul>
+          <li>
+            <m>a</m> and <m>b</m> are constant values representing the appropriate bounds of integration,
+          </li>
+          <li>
+            <m>A(h)</m> is a function that gives the area of a slice,
+          </li>
+          <li>
+            <m>D(h)</m> is a function that gives the distance a slice must be lifted, and
+          </li>
+          <li>
+            <m>\delta(h)</m> is a function that gives the density of the fluid (in weight per unit volume) within a slice.
+          </li>
+        </ul>
+      </p>
+
+      <ol>
+        <li>
+          <p>
+            Determine values or formulas for the <em effect="bold">four important components</em> exactly for the following specific problem:
+          </p>
+          <p>
+            <em effect="bold">Problem:</em> A rectangular tank is oriented upright. The height of the tank is <m>13</m> ft, and the length and width of the tank are <m>2</m> ft by <m>9</m> ft. The tank is full of water (which has a constant weight density of <m>62.4</m> lb/ft<sup>3</sup>), and the water is to be pumped out of the top of the tank.
+          </p>
+          <p>
+            To receive full credit, you must draw a picture with a typical slice and clearly label what distance is represented by <m>h</m>, since there are multiple valid ways of setting up the problem. <em>You only need to define the components; you do not need to evaluate the integral itself.</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            The sub-parts below are unrelated. For each scenario described below, justify in complete sentences which of the <em effect="bold">four important components</em> would be affected in the new context. Describe all components affected; there may be more than one.
+          <ul>
+            <li>
+              <p>
+                One of the length/width dimensions of the tank is made smaller.
+              </p>
+            </li>
+            <li>
+              <p>
+                Only the top few feet of water are to be pumped out of the tank.
+              </p>
+            </li>
+          </ul>
+          </p>
+        </li>
+      </ol>
+    </statement>
+
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <image source="RectangularTank1a.PNG" width="50%">
+              <shortdescription>An illustration of a rectangular tank drawn in three dimensions. The tank is labeled 13 feet tall, 9 feet long (front edge), and 2 feet deep (side edge). A horizontal blue slice of water is shown partway up the tank, with the surface shaded light blue. An arrow labeled "slice" points to the thin horizontal layer of water, indicating a cross-sectional slice used for volume calculations. On the right side, a vertical red bracket labeled "h" indicates the depth of the water from the top of the tank to the slice.</shortdescription>
+            </image>
+            <p>
+              Let <m>h</m> be the distance down from the top of the tank.
+              <ul>
+                <li><m>a=0</m>, <m>b=13</m></li>
+                <li><m>A(h)=2\cdot9=18</m></li>
+                <li><m>D(h)=h</m></li>
+                <li><m>\delta(h)=62.4</m></li>
+              </ul>
+              The total work required is:
+                <me>\int_0^{13} 18 (62.4) h \; dh</me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    <m>A(h)</m> would change because the area <m>A(h)=\text{length}\times\text{width}</m>, so shrinking the length/width will shrink the area.
+                  </p>
+                </li>
+                <li>
+                  <image source="RectangularTank1b.PNG" width="50%">
+                    <shortdescription>An illustration of a rectangular tank drawn in three dimensions. The tank is labeled 13 feet tall. A horizontal blue slice of water is shown partway up the tank, with the surface shaded light blue. An arrow labeled "slice" points to the thin horizontal layer of water, indicating a cross-sectional slice used for volume calculations. On the right side, a vertical red bracket labeled "h" indicates the depth of the water from the top of the tank to the slice. The top of the tank has a depth label of "a=0" and the bottom of the tank has a depth label of "b=13".</shortdescription>
+                  </image>
+                  <p>
+                    In the setup above, <m>a</m> and <m>b</m> correspond to the values of <m>h</m> at the top and the bottom of the tank. Limiting to pumping the top few feet would change the value of <m>b</m> (making it smaller).
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+
+  </example>
+
+</section>

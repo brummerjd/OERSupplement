@@ -11,8 +11,13 @@
     <!--<xi:include href="./frontmatter.ptx" />-->
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-5-problems.ptx" />
-
+    <chapter xml:id="ch-107-review-problems" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>MATH 107 Review Problems</title>
+        
+      <xi:include href="./sec-chapter-5-problems.ptx" />
+      <xi:include href="./sec-chapter-6-problems.ptx" />
+    
+    </chapter>
 
     <!-- Include backmatter -->
     <!--xi:include href="./backmatter.ptx" />-->
