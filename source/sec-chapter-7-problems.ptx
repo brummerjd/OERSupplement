@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chapter-7-problems">
+  <title>Chapter 7 Review Problems</title>
+  
+  <example>
+    <title>Series Convergence Tests, Version A</title>
+    
+    <statement>
+      <p>
+        For each series given below, either find the <em>exact</em> value (sum) of the series or explain in a sentence or two why the series diverges. When giving the exact value of a series, you do not need to simplify.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{n=1}^{\infty}\frac{n^2+20n}{10n^2-5}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle 3+\frac{3}{\pi}+\frac{3}{\pi^2}+\frac{3}{\pi^3}+\frac{3}{\pi^4}+\ldots</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle\frac{1}{\pi}+\frac{1}{\pi}(2)+\frac{1}{\pi}(2)^2+\frac{1}{\pi}(2)^3+\frac{1}{\pi}(2)^4+\ldots</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The general term is <m>a_n=\frac{n^2+20n}{10n^2-5}</m>. Here, we have
+              <md>
+                <mrow> \lim_{n\to\infty} a_n \amp = \lim_{n\to\infty} \frac{n^2+20n}{10n^2-5} \cdot \frac{\frac{1}{n^2}}{\frac{1}{n^2}}</mrow>
+                <mrow> \amp = \lim_{n\to\infty} \frac{1+\frac{20}{n}}{10-\frac{5}{n^2}}</mrow>
+                <mrow> \amp = \frac{1+0}{10-0}</mrow>
+                <mrow> \amp = \frac{1}{10} \neq 0</mrow>
+              </md>
+              Since <m>\displaystyle\lim_{n\to\infty}a_n\neq0</m>, by the Divergence Test (nth Term Test), the series diverges.
+            </p>
+          </li>
+          <li>
+            <p>
+              This is a geometric series, <m>\displaystyle\sum_{n=0}^\infty3\left(\frac{1}{\pi}\right)^n</m>, with <m>a=3</m> and <m>r=\frac{1}{\pi}</m>. Since the common ratio <m>r</m> satisfies <m>|r|=\frac{1}{\pi}&lt;1</m>, this series is a convergent geometric series with sum
+              <me>
+                \sum_{n=0}^\infty 3 \left(\frac{1}{\pi}\right)^n = \frac{a}{1-r} = \frac{3}{1-\frac{1}{\pi}}
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              This is a geometric series. Note that each thing being added is <m>\frac{1}{\pi}</m> multiplied by <m>2</m> to some power. This gives us a clue that here, <m>a=\frac{1}{\pi}</m>, and the common ratio is <m>r=2</m>. Since <m>|r|=2&gt;1</m>, this means that our geometric series <em>diverges</em>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+
+  </example>
+
+  <example>
+    <title>Series Convergence Tests, Version B</title>
+    
+    <statement>
+      <p>
+        Two series are given below. For each series below, do <em>both</em> of the following to receive full credit:
+        <ul>
+          <li>
+            <p>
+              Determine whether the series converges or diverges by applying one of the convergence tests listed above. You must clearly show that all requirements in the statement of the convergence test are satisfied.
+            </p>
+          </li>
+          <li>
+            <p>
+              Fully summarize your conclusion in a sentence or two, clearly indicating which convergence test you used and the result. Then explain <em>why you chose to use said test based on the series</em>.
+            </p>
+          </li>
+        </ul>
+        <em>Note:</em> If you are comparing to another series using the DCT or LCT, you may argue whether that comparison series converges or diverges using a $p$-Series Test.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle\sum_{n=1}^\infty\frac{n^4}{n^6+n^3+1}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle\sum_{n=1}^\infty\frac{2^{2n+1}}{n}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The general term is <m>a_n=\frac{n^2+20n}{10n^2-5}</m>. Here, we have
+              <md>
+                <mrow> \lim_{n\to\infty} a_n \amp = \lim_{n\to\infty} \frac{n^2+20n}{10n^2-5} \cdot \frac{\frac{1}{n^2}}{\frac{1}{n^2}}</mrow>
+                <mrow> \amp = \lim_{n\to\infty} \frac{1+\frac{20}{n}}{10-\frac{5}{n^2}}</mrow>
+                <mrow> \amp = \frac{1+0}{10-0}</mrow>
+                <mrow> \amp = \frac{1}{10} \neq 0</mrow>
+              </md>
+              Since <m>\displaystyle\lim_{n\to\infty}a_n\neq0</m>, by the Divergence Test (nth Term Test), the series diverges.
+            </p>
+          </li>
+          <li>
+            <p>
+              This is a geometric series, <m>\displaystyle\sum_{n=0}^\infty3\left(\frac{1}{\pi}\right)^n</m>, with <m>a=3</m> and <m>r=\frac{1}{\pi}</m>. Since the common ratio <m>r</m> satisfies <m>|r|=\frac{1}{\pi}&lt;1</m>, this series is a convergent geometric series with sum
+              <me>
+                \sum_{n=0}^\infty 3 \left(\frac{1}{\pi}\right)^n = \frac{a}{1-r} = \frac{3}{1-\frac{1}{\pi}}
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              This is a geometric series. Note that each thing being added is <m>\frac{1}{\pi}</m> multiplied by <m>2</m> to some power. This gives us a clue that here, <m>a=\frac{1}{\pi}</m>, and the common ratio is <m>r=2</m>. Since <m>|r|=2&gt;1</m>, this means that our geometric series <em>diverges</em>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+
+  </example>
+
+  <example>
+    <title>Integral Test</title>
+    
+    <statement>
+      <p>
+        Consider the following series:
+        <me>
+        \sum_{n=1}^{\infty} \; \frac{1}{n^3}
+        </me>
+        First, show that the Integral Test is applicable to this series by verifying that all requirements in the statement of the Integral Test are satisfied. Then justify whether the series converges or diverges according to the Integral Test (which you may do even if you are unable to verify the requirements of the Integral Test). You <em>must</em> use the <em>Integral Test</em> to receive credit. <em>Show all work and summarize your final answer in a complete sentence</em> to earn full credit.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Let <m>f(x)=\frac{1}{x^3}</m> which is continuous and positive (since <m>x\ge1</m>). Moreover, <m>f(x)=\frac{1}{x^3}</m> is decreasing because the denominator, <m>x^3</m>, is increasing for <m>x\ge1</m>. (Otherwise, observe that <m>f'(x)=-3x^{-4}=-3\cdot\frac{1}{x^4}</m> is negative for <m>x\ge1</m>.) Therefore, all requirements of the Integral Test are satisfied.
+      </p>
+      <p>
+        Applying the Integral Test, consider <m>\displaystyle\int_1^\infty\frac{1}{x^3}\,dx</m>, which we know converges by the <m>p</m>-Test for improper integrals with <m>p=3</m>. Specifically,
+        <md>
+          <mrow>\int_1^\infty \frac{1}{x^3} \, dx \amp = \lim_{b \to \infty} \int_1^b \frac{1}{x^3} \, dx</mrow>
+          <mrow> \amp = \lim_{b \to \infty} \left( -\frac{1}{2x^2} \right) \Big|_1^b</mrow>
+          <mrow> \amp = \lim_{b \to \infty} \left( -\frac{1}{2b^2} + \frac{1}{2(1)^2} \right)</mrow>
+          <mrow> \amp = 0 + \frac{1}{2} &lt; \infty</mrow>
+        </md>
+        Therefore, by the integral test, we conclude that <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^3}</m> converges.
+      </p>
+    </solution>
+
+  </example>
+
+  <!--Alternating Series-->
+
+  <!--Power Series-->
+
+</section>
