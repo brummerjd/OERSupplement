@@ -106,27 +106,40 @@
         <ol>
           <li>
             <p>
-              The general term is <m>a_n=\frac{n^2+20n}{10n^2-5}</m>. Here, we have
+              For large <m>n</m>, the series behaves like <m>\frac{n^4}{n^6}=\frac{1}{n^2}</m>. We will apply the LCT. First, set <m>a_n=\frac{n^4}{n^6+n^3+1}</m>, <m>b_n = \frac{1}{n^2}</m>.
+            </p>
+            <p>
+              Both <m>a_n&gt;0</m> and <m>b_n&gt;0</m> for all <m>n\ge1</m> - both are fractions with always positive numerator and denominator - so LCT applies.
+            </p>
+            <p>
+              We now check the limit:
               <md>
-                <mrow> \lim_{n\to\infty} a_n \amp = \lim_{n\to\infty} \frac{n^2+20n}{10n^2-5} \cdot \frac{\frac{1}{n^2}}{\frac{1}{n^2}}</mrow>
-                <mrow> \amp = \lim_{n\to\infty} \frac{1+\frac{20}{n}}{10-\frac{5}{n^2}}</mrow>
-                <mrow> \amp = \frac{1+0}{10-0}</mrow>
-                <mrow> \amp = \frac{1}{10} \neq 0</mrow>
-              </md>
-              Since <m>\displaystyle\lim_{n\to\infty}a_n\neq0</m>, by the Divergence Test (nth Term Test), the series diverges.
+                <mrow>\lim_{n\to\infty} \frac{a_n}{b_n} \amp = \lim_{n\to\infty} \frac{\frac{n^4}{n^6+n^3+1}}{\frac{1}{n^2}}</mrow>
+                <mrow>\amp = \lim_{n\to\infty} \frac{n^4}{n^6+n^3+1} \cdot \frac{n^2}{1}</mrow>
+                <mrow>\amp = \lim_{n\to\infty} \frac{n^6}{n^6+n^3+1} \cdot \frac{\frac{1}{n^6}}{\frac{1}{n^6}}</mrow>
+                <mrow>\amp = \lim_{n\to\infty} \frac{1}{1+\frac{1}{n^3}+\frac{1}{n^6}}</mrow>
+                <mrow>\amp = 1</mrow>
+              </md>.
+              Since <m>\lim_{n\to\infty}\frac{a_n}{b_n}=1</m> is a positive number, LCT says that <m>\sum a_n</m> and <m>\sum b_n</m> converge/diverge together.
+            </p>
+            <p>
+              <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^2}</m> converges by the <m>p</m>-Series Test (with <m>p=2&gt;1</m>), so <m>\displaystyle\sum_{n=1}^{\infty}\frac{n^4}{n^6+n^3+1}</m> also converges by LCT.
             </p>
           </li>
           <li>
             <p>
-              This is a geometric series, <m>\displaystyle\sum_{n=0}^\infty3\left(\frac{1}{\pi}\right)^n</m>, with <m>a=3</m> and <m>r=\frac{1}{\pi}</m>. Since the common ratio <m>r</m> satisfies <m>|r|=\frac{1}{\pi}&lt;1</m>, this series is a convergent geometric series with sum
-              <me>
-                \sum_{n=0}^\infty 3 \left(\frac{1}{\pi}\right)^n = \frac{a}{1-r} = \frac{3}{1-\frac{1}{\pi}}
-              </me>
-            </p>
-          </li>
-          <li>
-            <p>
-              This is a geometric series. Note that each thing being added is <m>\frac{1}{\pi}</m> multiplied by <m>2</m> to some power. This gives us a clue that here, <m>a=\frac{1}{\pi}</m>, and the common ratio is <m>r=2</m>. Since <m>|r|=2&gt;1</m>, this means that our geometric series <em>diverges</em>.
+              <p>
+                Here we will apply the Ratio Test:
+                <md>
+                  <mrow>L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right| \amp = \lim_{n\to\infty} \left| \frac{2^{2(n+1)+1}}{n+1} \cdot \frac{n}{2^{2n+1}} \right|</mrow>
+                  <mrow>\amp = \lim_{n\to\infty} \frac{2^{2n+3}}{2^{2n+1}} \cdot \frac{n}{n+1}</mrow>
+                  <mrow>\amp = \lim_{n\to\infty} 2^2 \cdot \frac{n}{n+1}</mrow>
+                  <mrow>\amp = 4 \cdot \lim_{n\to\infty} \frac{n}{n+1} \cdot \frac{\frac{1}{n^2}}{\frac{1}{n^2}}</mrow>
+                  <mrow>\amp = 4 \cdot \lim_{n\to\infty} \frac{1}{1+\frac{1}{n}}</mrow>
+                  <mrow>\amp = 4 \cdot \frac{1}{1+0} = 4</mrow>
+                </md>
+                Using the Ratio Test, since <m>L&gt;1</m>, the series diverges.
+              </p>
             </p>
           </li>
         </ol>
@@ -166,7 +179,50 @@
 
   </example>
 
-  <!--Alternating Series-->
+  <example>
+    <title>Alternating Series</title>
+    
+    <statement>
+      <p>
+        Determine whether the following series is absolutely convergent, conditionally convergent, or divergent. You must show all work to receive credit.
+        <me>
+        \sum_{n=1}^{\infty} \; \frac{(-1)^n}{6n}
+        </me>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        First, we check for absolute convergence:
+        <me>
+        \sum_{n=1}^{\infty} \left| \frac{(-1)^n}{6n} \right| = \sum_{n=1}^{\infty} \frac{1}{6n} = \frac{1}{6} \sum_{n=1}^{\infty} \frac{1}{n}
+        </me>
+        <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{n}</m> diverges by <m>p</m>-Series Test (with <m>p=1</m>, so <m>p\leq1</m>), so the series is <em>not absolutely convergent</em>.
+      </p>
+      <p>
+        Next, we check for conditional convergence. We will apply Alternating Series Test. Check requirements (using <m>a_n=\frac{1}{6n}</m>):
+      </p>
+      <ul>
+        <li>
+          <p>
+            Is the sequence of terms decreasing? Use <m>f(x)=\frac{1}{6x}</m>, then <m>f'(x)=-\frac{1}{6}\cdot\frac{1}{x^2}</m>, which is negative for all <m>x\geq1</m>, so <m>f(x)</m> is decreasing.
+          </p>
+        </li>
+        <li>
+          <p>
+            Is the limit of the terms equal to zero?
+            <me>
+            \lim_{n\to\infty} \frac{1}{6n} = \frac{1}{6} \cdot \lim_{n\to\infty} \frac{1}{n} = \frac{1}{6} \cdot 0 = 0
+            </me>
+          </p>
+        </li>
+      </ul>
+      <p>
+        The AST applies and therefore <m>\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^n}{6n}</m> converges. The series converges conditionally since the sequence <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{6n}</m> was divergent.
+      </p>
+    </solution>
+
+  </example>
 
   <!--Power Series-->
 
