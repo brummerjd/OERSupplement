@@ -199,23 +199,21 @@
       </p>
       <p>
         Next, we check for conditional convergence. We will apply the Alternating Series Test. Check requirements (using <m>a_n=\frac{1}{6n}</m>):
-      </p>
-      <ul>
-        <li>
-          <p>
-            Is the sequence of terms decreasing? Use <m>f(x)=\frac{1}{6x}</m>, then <m>f'(x)=-\frac{1}{6}\cdot\frac{1}{x^2}</m>, which is negative for all <m>x\geq1</m>, so <m>f(x)</m> is decreasing.
-          </p>
-        </li>
-        <li>
-          <p>
-            Is the limit of the terms equal to zero?
-            <me>
-            \lim_{n\to\infty} \frac{1}{6n} = \frac{1}{6} \cdot \lim_{n\to\infty} \frac{1}{n} = \frac{1}{6} \cdot 0 = 0
-            </me>
-          </p>
-        </li>
-      </ul>
-      <p>
+        <ul>
+          <li>
+            <p>
+              Is the sequence of terms decreasing? Use <m>f(x)=\frac{1}{6x}</m>, then <m>f'(x)=-\frac{1}{6}\cdot\frac{1}{x^2}</m>, which is negative for all <m>x\geq1</m>, so <m>f(x)</m> is decreasing.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is the limit of the terms equal to zero?
+              <me>
+              \lim_{n\to\infty} \frac{1}{6n} = \frac{1}{6} \cdot \lim_{n\to\infty} \frac{1}{n} = \frac{1}{6} \cdot 0 = 0
+              </me>
+            </p>
+          </li>
+        </ul>
         The AST applies and therefore <m>\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^n}{6n}</m> converges. The series converges conditionally since the sequence <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{6n}</m> was divergent.
       </p>
     </solution>
