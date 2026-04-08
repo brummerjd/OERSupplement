@@ -4,7 +4,7 @@
   <title>Chapter 7 Review Problems</title>
   
   <example>
-    <title>Series Convergence Tests, Version A</title>
+    <title>Geometric Series and Divergence Test</title>
     
     <statement>
       <p>
@@ -43,7 +43,7 @@
                 <mrow> \amp = \frac{1+0}{10-0}</mrow>
                 <mrow> \amp = \frac{1}{10} \neq 0</mrow>
               </md>
-              Since <m>\displaystyle\lim_{n\to\infty}a_n\neq0</m>, by the Divergence Test (nth Term Test), the series diverges.
+              Since <m>\displaystyle\lim_{n\to\infty}a_n\neq0</m>, by the Divergence Test (<m>n</m>th Term Test), the series diverges.
             </p>
           </li>
           <li>
@@ -66,15 +66,46 @@
   </example>
 
   <example>
-    <title>Series Convergence Tests, Version B</title>
+    <title>Integral Test</title>
     
     <statement>
       <p>
-        Two series are given below. For each series below, do <em>both</em> of the following to receive full credit:
+        Consider the following series:
+        <me>
+        \sum_{n=1}^{\infty} \; \frac{1}{n^3}
+        </me>
+        First, show that the Integral Test is applicable to this series by verifying that all requirements in the statement of the Integral Test are satisfied. Then justify whether the series converges or diverges according to the Integral Test (which you may do even if you are unable to verify the requirements of the Integral Test). You <em>must</em> use the <em>Integral Test</em> to receive credit. <em>Show all work and summarize your final answer in a complete sentence</em> to earn full credit.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Let <m>f(x)=\frac{1}{x^3}</m> which is continuous and positive (since <m>x\ge1</m>). Moreover, <m>f(x)=\frac{1}{x^3}</m> is decreasing because the denominator, <m>x^3</m>, is increasing for <m>x\ge1</m>. (Alternatively, observe that <m>f'(x)=-3x^{-4}=-3\cdot\frac{1}{x^4}</m> is negative for <m>x\ge1</m>.) Therefore, all requirements of the Integral Test are satisfied.
+      </p>
+      <p>
+        Applying the Integral Test, consider <m>\displaystyle\int_1^\infty\frac{1}{x^3}\,dx</m>, which we know converges by the <m>p</m>-Test for improper integrals with <m>p=3</m>. Specifically,
+        <md>
+          <mrow>\int_1^\infty \frac{1}{x^3} \, dx \amp = \lim_{b \to \infty} \int_1^b \frac{1}{x^3} \, dx</mrow>
+          <mrow> \amp = \lim_{b \to \infty} \left( -\frac{1}{2x^2} \right) \Big|_1^b</mrow>
+          <mrow> \amp = \lim_{b \to \infty} \left( -\frac{1}{2b^2} + \frac{1}{2(1)^2} \right)</mrow>
+          <mrow> \amp = 0 + \frac{1}{2} &lt; \infty</mrow>
+        </md>
+        Therefore, by the integral test, we conclude that <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^3}</m> converges.
+      </p>
+    </solution>
+
+  </example>
+  
+  <example>
+    <title>Series Convergence Tests</title>
+    
+    <statement>
+      <p>
+        Two series are given below. For each series, do <em>both</em> of the following to receive full credit:
         <ul>
           <li>
             <p>
-              Determine whether the series converges or diverges by applying one of the convergence tests listed above. You must clearly show that all requirements in the statement of the convergence test are satisfied.
+              Determine whether the series converges or diverges by applying one of our convergence tests. You must clearly show that all requirements in the statement of the convergence test are satisfied.
             </p>
           </li>
           <li>
@@ -83,7 +114,7 @@
             </p>
           </li>
         </ul>
-        <em>Note:</em> If you are comparing to another series using the DCT or LCT, you may argue whether that comparison series converges or diverges using a $p$-Series Test.
+        <em>Note:</em> If you are comparing to another series using the DCT or LCT, you may argue whether that comparison series converges or diverges using a <m>p</m>-Series Test.
       </p>
       <p>
         <ol>
@@ -128,52 +159,19 @@
           </li>
           <li>
             <p>
-              <p>
-                Here we will apply the Ratio Test:
-                <md>
-                  <mrow>L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right| \amp = \lim_{n\to\infty} \left| \frac{2^{2(n+1)+1}}{n+1} \cdot \frac{n}{2^{2n+1}} \right|</mrow>
-                  <mrow>\amp = \lim_{n\to\infty} \frac{2^{2n+3}}{2^{2n+1}} \cdot \frac{n}{n+1}</mrow>
-                  <mrow>\amp = \lim_{n\to\infty} 2^2 \cdot \frac{n}{n+1}</mrow>
-                  <mrow>\amp = 4 \cdot \lim_{n\to\infty} \frac{n}{n+1} \cdot \frac{\frac{1}{n^2}}{\frac{1}{n^2}}</mrow>
-                  <mrow>\amp = 4 \cdot \lim_{n\to\infty} \frac{1}{1+\frac{1}{n}}</mrow>
-                  <mrow>\amp = 4 \cdot \frac{1}{1+0} = 4</mrow>
-                </md>
-                Using the Ratio Test, since <m>L&gt;1</m>, the series diverges.
-              </p>
+              Here we will apply the Ratio Test:
+              <md>
+                <mrow>L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right| \amp = \lim_{n\to\infty} \left| \frac{2^{2(n+1)+1}}{n+1} \cdot \frac{n}{2^{2n+1}} \right|</mrow>
+                <mrow>\amp = \lim_{n\to\infty} \frac{2^{2n+3}}{2^{2n+1}} \cdot \frac{n}{n+1}</mrow>
+                <mrow>\amp = \lim_{n\to\infty} 2^2 \cdot \frac{n}{n+1}</mrow>
+                <mrow>\amp = 4 \cdot \lim_{n\to\infty} \frac{n}{n+1} \cdot \frac{\frac{1}{n}}{\frac{1}{n}}</mrow>
+                <mrow>\amp = 4 \cdot \lim_{n\to\infty} \frac{1}{1+\frac{1}{n}}</mrow>
+                <mrow>\amp = 4 \cdot \frac{1}{1+0} = 4</mrow>
+              </md>
+              Using the Ratio Test, since <m>L&gt;1</m>, the series diverges.
             </p>
           </li>
         </ol>
-      </p>
-    </solution>
-
-  </example>
-
-  <example>
-    <title>Integral Test</title>
-    
-    <statement>
-      <p>
-        Consider the following series:
-        <me>
-        \sum_{n=1}^{\infty} \; \frac{1}{n^3}
-        </me>
-        First, show that the Integral Test is applicable to this series by verifying that all requirements in the statement of the Integral Test are satisfied. Then justify whether the series converges or diverges according to the Integral Test (which you may do even if you are unable to verify the requirements of the Integral Test). You <em>must</em> use the <em>Integral Test</em> to receive credit. <em>Show all work and summarize your final answer in a complete sentence</em> to earn full credit.
-      </p>
-    </statement>
-
-    <solution>
-      <p>
-        Let <m>f(x)=\frac{1}{x^3}</m> which is continuous and positive (since <m>x\ge1</m>). Moreover, <m>f(x)=\frac{1}{x^3}</m> is decreasing because the denominator, <m>x^3</m>, is increasing for <m>x\ge1</m>. (Otherwise, observe that <m>f'(x)=-3x^{-4}=-3\cdot\frac{1}{x^4}</m> is negative for <m>x\ge1</m>.) Therefore, all requirements of the Integral Test are satisfied.
-      </p>
-      <p>
-        Applying the Integral Test, consider <m>\displaystyle\int_1^\infty\frac{1}{x^3}\,dx</m>, which we know converges by the <m>p</m>-Test for improper integrals with <m>p=3</m>. Specifically,
-        <md>
-          <mrow>\int_1^\infty \frac{1}{x^3} \, dx \amp = \lim_{b \to \infty} \int_1^b \frac{1}{x^3} \, dx</mrow>
-          <mrow> \amp = \lim_{b \to \infty} \left( -\frac{1}{2x^2} \right) \Big|_1^b</mrow>
-          <mrow> \amp = \lim_{b \to \infty} \left( -\frac{1}{2b^2} + \frac{1}{2(1)^2} \right)</mrow>
-          <mrow> \amp = 0 + \frac{1}{2} &lt; \infty</mrow>
-        </md>
-        Therefore, by the integral test, we conclude that <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^3}</m> converges.
       </p>
     </solution>
 
@@ -200,7 +198,7 @@
         <m>\displaystyle\sum_{n=1}^{\infty}\frac{1}{n}</m> diverges by <m>p</m>-Series Test (with <m>p=1</m>, so <m>p\leq1</m>), so the series is <em>not absolutely convergent</em>.
       </p>
       <p>
-        Next, we check for conditional convergence. We will apply Alternating Series Test. Check requirements (using <m>a_n=\frac{1}{6n}</m>):
+        Next, we check for conditional convergence. We will apply the Alternating Series Test. Check requirements (using <m>a_n=\frac{1}{6n}</m>):
       </p>
       <ul>
         <li>
@@ -225,5 +223,70 @@
   </example>
 
   <!--Power Series-->
+  <example>
+    <title>Power Series</title>
+    
+    <statement>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Determine the radius of convergence of the following power series:
+              <me>\sum_{n=1}^\infty \frac{(n+1)\cdot(x-10)^n}{5^n}</me>
+              You must show all work to receive full credit and be sure to clearly indicate your final answer. <em>Note:</em> You do <em>not</em> need to determine the interval of convergence, only the radius.
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider an arbitrary power series and a fact about the power series:
+              <me>\sum_{k=0}^\infty c_k (x-10)^k</me>
+            </p>
+            <p>
+              <em>Fact:</em> The power series converges at <m>x=2</m>.</p>
+            <p>  
+              In a sentence or two, explain why the following <em>Claim</em> must be true, must be false, or why there is not enough information to determine whether it is true or false:
+            </p>
+            <p>
+              <em>Claim:</em> The power series diverges at <m>x=18</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We will apply the Ratio Test:
+              <md>
+                <mrow>L \amp = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right|</mrow>
+                <mrow>\amp = \lim_{n\to\infty} \left| \frac{((n+1)+1) \cdot (x-10)^{n+1}}{5^{n+1}} \cdot \frac{5^n}{(n+1)(x-10)^n} \right|</mrow>
+                <mrow>\amp = \lim_{n\to\infty} \frac{1}{5} \cdot |x-10| \cdot \frac{n+2}{n+1}</mrow>
+                <mrow>\amp = \frac{1}{5} |x-10| \cdot \lim_{n\to\infty} \frac{n+2}{n+1} \cdot \frac{\frac{1}{n}}{\frac{1}{n}}</mrow>
+                <mrow>\amp = \frac{1}{5} |x-10| \cdot \lim_{n\to\infty} \frac{1+\frac{2}{n}}{1+\frac{1}{n}}</mrow>
+                <mrow>\amp = \frac{1}{5} |x-10| \cdot \frac{1+0}{1+0} = \frac{1}{5} |x-10|</mrow>
+              </md>
+              The endpoints of the interval of convergence are when <m>L=1</m>:
+              <me>
+                \frac{1}{5} |x-10| = 1 \qquad \implies \qquad |x-10| = 5
+              </me>
+              This is solved when <m>x=15</m> (when <m>x-10=5</m>) or when <m>x=5</m> (when <m>x-10=-5</m>).
+            </p>
+            <p>
+              The interval of convergence includes <m>5&lt;x&lt;15</m>; the endpoints <m>x=5</m> and <m>x=15</m> may or may not be included. But the <em>radius of convergence</em> is half the length of the interval, which is <m>\frac{10}{2}=5</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The Radius of Convergence (RoC) is at least <m>8</m>. The RoC could equal <m>8</m>, then the right endpoint of the Interval of Convergence (IoC) would be <m>10+8=18</m>. However, the series may or may not converge at each endpoint, so there is <em>not enough information</em>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+
+  </example>
 
 </section>
