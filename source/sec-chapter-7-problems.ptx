@@ -287,4 +287,64 @@
 
   </example>
 
+  <!--Modifying Taylor Series-->
+  <example>
+    <title>Modifying Taylor Series</title>
+    
+    <statement>
+      <p>
+        Recall that <m>\cos(x)</m> has the following Taylor series (centered at <m>x=0</m>), valid for all <m>-\infty\le x\le\infty</m>:
+        <me>\cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!}</me>
+        Using the Taylor series for <m>\cos(x)</m>, give the Taylor series (centered at <m>x=0</m>) for
+        <me>f(x) = x^3 \; \cos(x^2)</me>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <md>
+          <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^kx^{2k}}{(2k)!}</mrow>
+          <mrow>\amp \Downarrow</mrow>
+          <mrow>\cos(x^2) \amp = \sum_{k=0}^\infty \frac{(-1)^k(x^2)^{2k}}{(2k)!} = \sum_{k=0}^\infty \frac{(-1)^kx^{4k}}{(2k)!}</mrow>
+          <mrow>\amp \Downarrow</mrow>
+          <mrow>x^3\cdot\cos(x^2) \amp = x^3 \cdot \left( \sum_{k=0}^\infty \frac{(-1)^kx^{4k}}{(2k)!} \right) = \sum_{k=0}^\infty \frac{(-1)^kx^{4k+3}}{(2k)!}</mrow>
+        </md>
+      </p>
+    </solution>
+
+  </example>
+
+  <!--Taylor Series and Derivatives-->
+  <example>
+    <title>Taylor Series and Derivatives</title>
+    
+    <statement>
+      <p>
+        A Taylor series (centered at <m>x=0</m>) for an unspecified function <m>g(x)</m> is given as follows:
+        <me>g(x) = \sum_{k=0}^\infty \frac{2}{(k+2)!} x^k</me>
+        Determine the exact value of <m>g^{(11)}(0)</m>. You do not need to simplify your answer.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        The general formula for a Taylor series is given by
+        <me>g(x) = \sum_{k=0}^\infty \frac{g^{(k)}(0)}{k!} x^k</me>
+        Which term includes something like <m>g^{(11)}(0)</m>? Use <m>k=11</m> in the general formula:
+        <me>g(x) = \ldots + \frac{g^{(11)}(0)}{11!} x^{11} + \ldots</me>
+        Now compare this with the specific coefficient on the <m>x^{11}</m> term of <m>g(x)</m>:
+        <md>
+          <mrow>g(x) \amp = \sum_{k=0}^\infty \frac{2}{(k+2)!} x^k</mrow>
+          <mrow>\amp = \ldots + \frac{2}{13!} x^{11} + \ldots</mrow>
+        </md>
+        Pulling things together, we can solve:
+        <md>
+          <mrow>\frac{g^{(11)}(0)}{11!} \amp = \frac{2}{13!}</mrow>
+          <mrow>g^{(11)}(0) \amp = \frac{2\cdot11!}{13!} = \frac{2}{13\cdot12}</mrow>
+        </md>
+      </p>
+    </solution>
+
+  </example>
+
 </section>
